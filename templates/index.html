@@ -44,28 +44,35 @@
         .column {
             float: left;
             width: 33.33%;
+            border: 2px solid red;
+
             /* margin-left: auto;
             margin-right: auto; */
-            /* padding: 5px; */
+            padding: 5px;
 
         }
 
         .centric {
             /* margin: auto; */
             /* justify-content: center; */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
+            /* Horizontal Space */
+            margin-bottom: 10px;
+
         }
 
         /* Clearfix (clear floats) */
         .row::after {
+
             content: "";
             clear: both;
             display: table;
-            margin: auto;
-            /* display: flex; */
-            justify-content: center;
+            margin-right: 10px;
+            /* Horizontal Space */
+            margin-bottom: 10px;
+
         }
     </style>
 
@@ -698,8 +705,9 @@
 
     </div>
 
-    <div class="centric">
-        <div class="row">
+
+    <div class="row">
+        <div class="centric">
             <div class="column">
                 <h1 class="text-xl font-semibold text-gray-900">Autogluon : mRS at discharge</h1>
                 <img src="{{url_for('static', filename='one_.png')}}" alt="Snow" style="width:100%">
@@ -709,10 +717,11 @@
                 <h1 class="text-xl font-semibold text-gray-900">Autogluon : mRS at 3 Months</h1>
                 <img src="{{url_for('static', filename='one__.png')}}" alt="Forest" style="width:100%">
             </div>
-
         </div>
+    </div>
 
-        <div class="row">
+    <div class="row">
+        <div class="centric">
             <div class="column">
                 <h1 class="text-xl font-semibold text-gray-900">MLJAR : mRS at Discharge</h1>
                 <img src="{{url_for('static', filename='two_.png')}}" alt="Snow" style="width:100%">
@@ -721,9 +730,10 @@
                 <h1 class="text-xl font-semibold text-gray-900">MLJAR : mRS at 3 Months</h1>
                 <img src="{{url_for('static', filename='two__.Jpg')}}" alt="Forest" style="width:100%">
             </div>
-
         </div>
-        <div class="row">
+    </div>
+    <div class="row">
+        <div class="centric">
             <div class="column">
                 <h1 class="text-xl font-semibold text-gray-900">Decision Tree Classifier : mRS at Discharge</h1>
                 <img src="{{url_for('static', filename='three_.png')}}" alt="Snow" style="width:100%">
@@ -732,20 +742,22 @@
                 <h1 class="text-xl font-semibold text-gray-900">SVM : mRS at 3 Discharge</h1>
                 <img src="{{url_for('static', filename='three__.png')}}" alt="Forest" style="width:100%">
             </div>
-
         </div>
-        <div class="row">
+    </div>
+    <div class="row">
+        <div class="centric">
             <div class="column">
                 <h1 class="text-xl font-semibold text-gray-900">SVM : mRS at 3 Months</h1>
                 <img src="{{url_for('static', filename='four_.png')}}" alt="Snow" style="width:100%">
             </div>
+
             <div class="column">
                 <h1 class="text-xl font-semibold text-gray-900">KNN : mRS at 3 Months</h1>
                 <img src="{{url_for('static', filename='four__.png')}}" alt="Forest" style="width:100%">
             </div>
-
         </div>
     </div>
+
     <!-- <div>
         <h1 class="text-xl font-semibold text-gray-900">MLJAR : mRS at discharge</h1><img
             src="{{url_for('static', filename='two_.png')}}" align="left-full" />
