@@ -87,7 +87,7 @@
 
 
     <script type="text/javascript">
-        alert("Definition of predicted outcome : The modified Rankin (mRS) score is a 6 point disability score with possible scores from 0 to 6, where 0 denotes lack of any symptoms, 5 denotes severe bedridden disability and score of 6 denotes death. We have classified the mRS score into three classes as class 1 (mRS ≦ 2 = favorable outcome), class 2 (mRS > 2 and ≦ 5 = unfavorable outcome) and class 3 (mRS=6=death).               mRS value predicted = {{ result }}");
+        alert("mRS value predicted = {{ result }} \n\nThe mRS score into three classes:\nclass 1 (mRS ≦ 2 = favorable outcome) \nclass 2 (mRS > 2 and ≦ 5 = unfavorable outcome) \nclass 3 (mRS=6=death).");
     </script>
 
     {% endif %}
@@ -740,7 +740,7 @@
                 <img src="{{url_for('static', filename='three_.png')}}" alt="Snow" style="width:100%">
             </div>
             <div class="column">
-                <h1 class="text-xl font-semibold text-gray-900">SVM : mRS at 3 Discharge</h1>
+                <h1 class="text-xl font-semibold text-gray-900">SVM : mRS at Discharge</h1>
                 <img src="{{url_for('static', filename='three__.png')}}" alt="Forest" style="width:100%">
             </div>
         </div>
